@@ -28,7 +28,7 @@ Remix IDE is an Integrated Development Environment for Solidity smart contract d
 Specify the Solidity compiler version using the `pragma` directive.
 - **Example**:
   ```solidity
-  pragma solidity 0.8.19;
+  pragma solidity ^0.8.26;
   ```
 
 ### SPDX License Identifier
@@ -36,7 +36,7 @@ Include an SPDX License Identifier for legal clarity.
 - **Example**:
   ```solidity
   // SPDX-License-Identifier: MIT
-  pragma solidity ^0.8.19;
+  pragma solidity ^0.8.26;
   ```
 
 ### Writing the Smart Contract
@@ -44,7 +44,7 @@ Define your contract using the `contract` keyword.
 - **Example**:
   ```solidity
   // SPDX-License-Identifier: MIT
-  pragma solidity ^0.8.19;
+  pragma solidity ^0.8.26;
 
   contract SimpleStorage {
       uint256 favoriteNumber;
@@ -207,31 +207,31 @@ Before deploying, always perform a compilation check to ensure that the contract
 #### Deployment on a Testnet
 1. Go into the deployment tab and switch from the local virtual environment (Remix VM) to the Injected Provider - MetaMask. This allows Remix to send requests and interact with your MetaMask account.
 
-   ![Switch Environment](https://example.com/screenshot_placeholder.png)
+   ![Switch Environment](https://github.com/jason-victor1/smart-contract-development/blob/main/%231%20change%20environment%20to%20injector%20metamask.png?raw=true)
 
 2. Ensure you have enough Sepolia ETH in your account, which you can obtain from a faucet. Once your balance is sufficient, you can proceed by clicking the "Deploy" button.
 
 3. MetaMask will ask to sign and send the transaction on the testnet. The deployment transaction is displayed on Etherscan.
 
-   ![Deployed Smart Contract](https://example.com/screenshot_placeholder.png)
+   ![Deployed Smart Contract](https://github.com/jason-victor1/smart-contract-development/blob/main/%232%20deployed%20to%20testnet.png?raw=true)
 
 #### Interacting with the Deployed Contract
 1. Since the contract has been deployed, we can now interact with it and update the blockchain. For example, if you want to store a number, you can do so by clicking the button 'store'. MetaMask will ask for another transaction confirmation to update the favorite number.
 
-   ![Update Smart Contract](https://example.com/screenshot_placeholder.png)
+   ![Update Smart Contract](https://github.com/jason-victor1/smart-contract-development/blob/main/%233%20update%20the%20contract%20using%20the%20store%20function.png?raw=true)
 
 2. Check the details on Etherscan at the deployed address:
 
-   ![Etherscan Transaction](https://example.com/screenshot_placeholder.png)
+   ![Etherscan Transaction](https://github.com/jason-victor1/smart-contract-development/blob/main/%234%20store%20function%20success%20on%20etherscan.png?raw=true)
 
 ### View and Pure Functions
 View and pure functions will not send transactions. 
 
 Go back to Remix IDE and click the retrieve function which shows the value used in the store function.
 
-   ![Retrieve Function Value](https://example.com/screenshot_placeholder.png)
+   ![Retrieve Function Value](https://github.com/jason-victor1/smart-contract-development/blob/main/%235%20stored%202500%20on%20chain.png?raw=true)
 
 Go back to Etherscan and search by the smart contract address. Both transactions are listed:
 
-   ![Etherscan Transactions Overview](https://example.com/screenshot_placeholder.png)
+   ![Etherscan Transactions Overview](https://github.com/jason-victor1/smart-contract-development/blob/main/%236%20%20both%20transaction%20for%20the%20smart%20contract.png?raw=true)
 
